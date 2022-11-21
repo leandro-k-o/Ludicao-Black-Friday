@@ -15,3 +15,5 @@ Tecnologias utilizada:
 - Firebase Hosting
 - Formsubmit.co
 
+Disponível em:
+https://ludicaoblackfriday.web.app/
