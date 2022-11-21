@@ -1,6 +1,6 @@
 # Ludicao-Black-Friday
 
-Landing page de black friday
+Landing page de black friday apenas para mobile.
 
 Utilização de pacotes ClipboardJS e DOMPurify.
 
