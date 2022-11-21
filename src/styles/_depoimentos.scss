@@ -1,0 +1,101 @@
+$stars: url('../assets/star.png');
+
+.depoimentos{
+  @include sectionGutter($cor-primaria-light);
+  // padding: 20px 12px;
+  .title-container{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+
+    .subtitle{
+      @include subtitle($cor-primaria-dark);
+    }
+
+    .title{
+      @include title($cinza-6);
+    }
+  }
+
+  .depoimento-container{
+    margin-top: 20px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 20px;
+    background: $cor-primaria-dark;
+    border-radius: 5px;
+
+    .depoimento-header{
+      display: grid;
+      grid-template-columns: 70px 1fr 40px;
+      align-items: center;
+      justify-content: flex-start;
+      color: $cinza-2;
+      gap: 12px;
+
+      .foto-aluno{
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        border: 2px solid $cor-primaria-2;
+        border-radius: 50%;
+        background-color: white;
+        overflow: hidden;
+
+        img{
+          display: block;
+          width: 108%;
+          margin-top: -4px;
+          margin-left: -4px;
+        }
+      }
+
+      .nome-aluno-container{
+        text-align: left;
+
+        .nome{
+          font-family: $font-title;
+          font-weight: 500;
+          font-size: .9rem;
+
+        }
+
+        .descricao-aluno{
+          font-size: .8rem;
+          line-height: 1;
+
+          margin: 0;
+
+        }
+      }
+
+      .stars{
+        margin-left: -20px;
+        width: calc(12px * 5);
+        height: 20px;
+        background-image: $stars;
+        background-position: center;
+        background-repeat: repeat-x;
+
+      }
+    }
+    .depoimento{
+      margin-top: 20px;
+      color:white;
+
+      blockquote{
+        font-family: $font-text;
+        font-weight: 300;
+        color: $cinza-2;
+        font-size: .9rem;
+        line-height: 1.2;
+        margin: 0;
+        text-align: left;
+        text-indent: 1rem;
+        p{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

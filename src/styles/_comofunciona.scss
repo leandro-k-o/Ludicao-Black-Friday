@@ -1,0 +1,70 @@
+.comofunciona{
+  @include sectionGutter($cinza-5);
+
+  .title-container{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+  
+    .subtitle{
+      @include subtitle($cinza-3);
+    }
+  
+    .title{
+      @include title($cinza-1);
+    }
+  }
+
+  .lista{
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    counter-reset: contador;
+    width: 100%;
+
+    li{
+      display: grid;
+      grid-template-columns: 40px auto;
+      align-items: center;
+      text-align: left;
+      gap:12px;
+      font-family: $font-text;
+      color: $cinza-2;
+      counter-increment: contador;
+      width: calc(100%);
+      margin-left: -20px;
+      padding: 20px 20px;
+
+      &::before{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+        content: counter(contador);
+        font-family: $font-title;
+        font-size: 1.5rem;
+        background: #9C77B8;
+        border: 2px solid #5D337E;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      &:nth-child(even){
+        background-color: $cinza-7;
+      }
+    }
+  }
+
+  .observacao{
+    color: $cinza-2;
+    text-align: left;
+    font-size: .7rem;
+  }
+
+  .btn-reservar{
+    margin-top: 20px;
+  }
+}

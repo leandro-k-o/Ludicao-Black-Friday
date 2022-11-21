@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import 'variables';
+@import 'reset';
+@import 'black-friday';
+@import 'intro';
+@import 'paraquem';
+@import 'comofunciona';
+@import 'depoimentos';
+@import 'comprar';
+@import 'quemsomos';
+
+
+body{
+  section{  
+    max-width: $max-width;
+  }
+
+  .btn-reservar{
+    @include btn;
+  }
+
+  .title-container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .footer{
+    @include sectionGutter($cinza-4);
+    text-align: left;
+    padding: 20px;
+    border:none;
+    max-width: $max-width;
+
+    .title{
+      color: $cinza-2;
+      font-weight: 400;
+    }
+
+    p{
+      font-size: .9rem;
+      color: $cinza-3;
+    }
+
+    .whatsapp, .email{
+      margin-top: 20px;
+      p + p{
+        font-size: .7rem;
+        color: $cinza-2;
+      }
+    }
+    
+  }
+}

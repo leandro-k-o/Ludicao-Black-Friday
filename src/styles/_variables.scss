@@ -1,0 +1,56 @@
+$cor-primaria-dark: #200436;
+$cor-primaria: #913DD2;
+$cor-primaria-2: #9C77B8;
+$cor-primaria-light: #D6C0E7;
+
+$cinza-7: #222;
+$cinza-6: #313131;
+$cinza-5: #3D3D3D;
+$cinza-4: #525252;
+$cinza-3: #A9A9A9;
+$cinza-2: #E8E8E8;
+$cinza-1: #F3F0F5;
+
+$font-title: 'Poppins', sans-serif;
+$font-text: 'Roboto';
+
+$max-width: 500px;
+
+@mixin btn {
+  padding: 12px 20px;
+  background: linear-gradient(180deg, #481E68 0%, #5E2B84 100%);
+  border-radius: 10px;
+  color: $cinza-2;
+  font-family: $font-title;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin sectionGutter($color){
+  border: 2px solid $cor-primaria;
+  background-color: $color;
+  text-align: center;
+  padding: 40px 20px;
+  margin: auto;
+  font-family: $font-title;
+}
+
+@mixin title($color){
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: $color;
+  line-height: 1;
+}
+
+@mixin subtitle($color){
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: $color;
+}
+
+@mixin text($color) {
+  font-family: $font-text;
+  color: $color;
+  font-size: 1rem;
+}

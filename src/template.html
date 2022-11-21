@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+
+  <section class="black-friday">
+    <h1 class="title">Black Friday</h1>
+    <h2 class="subtitle">Consulta Comportamental</h2>
+    <p class="promocao">de <span class="preco-antigo">R$ 240</span> por até 5x <span class="preco-destaque">R$ 31</span><br />
+      à vista por <span class="preco-destaque">R$ 140</span>
+    </p>
+
+    <div class="timer-wrapper">
+      <h2 class="timer-title">PROMOÇÃO ACABA EM <span data-days>0</span> DIAS E</h2>
+      <div class="timer">
+        <div class="horas">
+          <span class="time" data-hours>00</span>
+          <p class="time-desc">HORA(S)</p>
+        </div>
+        <div class="minutos">
+          <span class="time" data-minutes>00</span>
+          <p class="time-desc">MINUTO(S)</p>
+        </div>
+        <div class="horas">
+          <span class="time" data-seconds>00</span>
+          <p class="time-desc">SEGUNDO(S)</p>
+        </div>
+      </div>
+      <p class="text">Unidades Limitadas</p>
+    </div>
+
+    <div class="loading">CARREGANDO...</div>
+    <button class="btn-reservar" data-roll="#comprar">Reservar Consulta Comportamental Agora</button>
+  </section>
+
+  <section class="intro">
+    <div class="logo">
+      <img data-img alt="Leandro e Thamires Cartoon">
+    </div>
+    <div class="title-container">
+      <h4 class="subtitle">Treinos personalizados</h4>
+      <h1 class="title">Tenha um cão super educado</h1>
+      <p class="text">O relacionamento com seu cão irá se transformar. Você ficará muito satisfeito e ele mais feliz!</p>
+    </div>
+    <button class="btn-reservar" data-roll="#comprar">Reservar Consulta Comportamental Agora</button>
+  </section>
+
+  <section class="paraquem">
+    <div class="title-container">
+      <h4 class="subtitle">A Consulta Comportamental é ideal se</h4>
+      <h1 class="title">o seu cão...</h1>
+    </div>
+    <div class="filhote container">
+      <h3 class="title">é filhote</h3>
+      <div class="flags-container">
+        <span>mordidas</span>
+        <span>xixi/cocô fora do lugar</span>
+        <span>destruição</span>
+        <span>não fica quieto</span>
+        <span>medroso</span>
+        <span>rouba objetos</span>
+        <span>late sem parar</span>
+      </div>
+    </div>
+    <div class="adulto container">
+      <h3 class="title">tem problemas comportamentais</h3>
+      <div class="flags-container">
+        <span>mordidas</span>
+        <span>xixi/cocô fora do lugar</span>
+        <span>destruição</span>
+        <span>não fica quieto</span>
+        <span>medroso</span>
+        <span>rouba objetos</span>
+        <span>reativo</span>
+        <span>foge</span>
+        <span>não fica sozinho</span>
+        <span>puxa no passeio</span>
+      </div>
+    </div>
+    <h3 class="out-title">ou se você deseja tornar <span class="sub">seu cão mais feliz!</span></h3>
+  </section>
+
+  <section class="comofunciona">
+    <div class="title-container">
+      <h4 class="subtitle">A Consulta Comportamental é online</h4>
+      <h1 class="title">como funciona?</h1>
+    </div>
+    <ol class="lista">
+      <li>Pagamento é realizado através da plataforma PagBank (100% seguro) ou Pix.</li>
+      <li>Após o pagamento, entraremos em contato para obter informações e montar o plano de treino.</li>
+      <li>Agendamos o encontro via Whatsapp ou email.</li>
+      <li>A consulta é ao vivo por meio do Whatsapp, Google Meet ou Zoom.</li>
+      <li>Após o encontro, enviaremos um relatório com as orientações propostas e material de apoio.</li>
+      <li>Durante 30 dias, nós daremos suporte através de mensagens, vídeos e áudios.</li>
+      <li>Se precisar, podemos agendar o retorno e  prorrogar o suporte por mais 15 dias* </li>
+    </ol>
+    <p class="observacao">*Consulte os valores e condições para agendar o retorno</p>
+    <button class="btn-reservar" data-roll="#comprar">Reservar Consulta Comportamental Agora</button>
+  </section>
+
+  <section class="depoimentos">
+    <div class="title-container">
+      <h4 class="subtitle">Nossos alunos deixaram</h4>
+      <h1 class="title">depoimentos</h1>
+    </div>
+    <div class="depoimento-container" data-aluno="miya">
+      <header class="depoimento-header">
+        <div class="foto-aluno">
+          <img alt="" />
+        </div>
+        <div class="nome-aluno-container">
+          <h5 class="nome">Juliana Takeno</h5>
+          <p class="descricao-aluno">Tutora da Miya</p>
+        </div>
+        <div class="stars">
+        </div>
+      </header>
+      <div class="depoimento">
+        <blockquote>
+          <p>"Recomendo o Leandro e a Thamires de olhos fechados! A Miya antes do adestramento não conseguia conviver com qualquer pessoa estranha que vinha em casa, ou mesmo com visitas, latindo muito e avançando.</p>
+
+          <p>
+            Após o adestramento, ela ficou muito mais tolerante ao convivio com pessoas diferentes em casa, ficando menos agitada e estressada.
+            Ela também era agressiva com o meu bebê, e com os métodos explicados pelo Leandro conseguimos que a convivência entre eles ficasse melhor.
+          </p>
+          
+          <p>Durante todo o trabalho foi possível acompanhar a paciência tanto em conhecimento ao lidar com a Miya, como com pequenas e constantes evoluções a cada aula.</p>
+          
+          <p>Agradeço muito por tudo que eles fizeram por nós, por deixarem a vida mais leve aqui em casa. Todos sempre comentam em como a Miya está diferente e sou muito grata a vocês por isso!"</p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="depoimento-container" data-aluno="farofa">
+      <header class="depoimento-header">
+        <div class="foto-aluno">
+          <img alt="" />
+        </div>
+        <div class="nome-aluno-container">
+          <h5 class="nome">Natally e Thiago</h5>
+          <p class="descricao-aluno">Tutores da Farofa</p>
+        </div>
+        <div class="stars">
+        </div>
+      </header>
+      <div class="depoimento">
+        <blockquote>
+          <p>"Procuramos a Ludicão para inicialmente resolver uma questão comportamental muito específica da Farofa. </p>
+
+          <p>Ao longo dos treinamentos, além de resolvermos esse ponto, identificamos uma série de posturas e comportamentos que enriqueceram muito nossa relação com ela.</p>
+
+          <p>Gostamos muito da forma didática com que encaminha as aulas, pois nos dá autonomia para que consigamos prosseguir com as atividades no dia a dia."</p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="depoimento-container" data-aluno="paris">
+      <header class="depoimento-header">
+        <div class="foto-aluno">
+          <img alt="" />
+        </div>
+        <div class="nome-aluno-container">
+          <h5 class="nome">Priscila Pontes</h5>
+          <p class="descricao-aluno">Tutora da Paris</p>
+        </div>
+        <div class="stars">
+        </div>
+      </header>
+      <div class="depoimento">
+        <blockquote>
+          <p>
+            "A Paris é uma cachorrinha que adotei de uma ONG.
+            Ela tinha diversos traumas e eu, leiga, não sabia a melhor forma para lidar com a situação.
+          </p>
+
+          <p>Antes de conhecer a Thamires e o trabalho da Ludicão eu ficava perdida, com medo de tomar decisões erradas e de não saber educar a Paris da melhor maneira.</p>
+
+          <p>Após as primeiras aulas já comecei a ter mais segurança e autonomia para trabalhar no desenvolvimento da Paris e consegui muitas evoluções positivas.</p>
+
+          <p>Sou muito grata por ter iniciado esse trabalho com a Ludicão e conseguir proporcionar bem-estar e um desenvolvimento muito positivo para ela! Super recomendo o trabalho deles para todas as mamães e papais de pets!"</p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="depoimento-container" data-aluno="dina_lulu">
+      <header class="depoimento-header">
+        <div class="foto-aluno">
+          <img alt="" />
+        </div>
+        <div class="nome-aluno-container">
+          <h5 class="nome">Kelly e Jean</h5>
+          <p class="descricao-aluno">Tutores da Dina e Lulu</p>
+        </div>
+        <div class="stars">
+        </div>
+      </header>
+      <div class="depoimento">
+        <blockquote>
+          <p>
+            "A gente sempre achou que dava o melhor tratamento como tutores, mas depois que conhecemos a Thamires notamos o quanto não deixávamos Lulu e Dina serem cachorras.
+            Buscamos ajuda pra resolver a questão da Dina em pular na gente e nos móveis. Por conta da idade e dos problemas de coluna ela não poderia mais apresentar esse comportamento, sob risco de não caminhar mais!
+            Mas Thamires nos mostrou não apenas isso, mostrou que cães tem que ser cães, não precisam de uma infinidade de banhos, de "frufrus" na cabeça ou de um pote de comida lindo e de porcelana.
+          </p>
+          <p>
+            Hoje temos cachorras muito felizes, que tem enriquecimento ambiental, se comunicam com a gente de forma muito satisfatória, correm, cavam e tem 6 meses que não tomam banho (kkk!).
+            O trabalho da Thamires é impecável, baseado em evidências, reforço positivo, organizado e ela é muito, muito, muito atenciosa.
+            Falamos pra todo mundo o quanto o trabalho da Ludicão mudou nosso relacionamento com elas e o quanto todos os tutores deviam passar por adestramento positivo com os doguinhos."
+          </p>       
+        </blockquote>
+      </div>
+    </div>
+    <div class="depoimento-container" data-aluno="brisa">
+      <header class="depoimento-header">
+        <div class="foto-aluno">
+          <img alt="" />
+        </div>
+        <div class="nome-aluno-container">
+          <h5 class="nome">Renata e Luander</h5>
+          <p class="descricao-aluno">Tutores da Brisa</p>
+        </div>
+        <div class="stars">
+        </div>
+      </header>
+      <div class="depoimento">
+        <blockquote>
+          <p>Quando adotamos a Brisa, ela tinha apenas 5 dias de vida e não sabíamos o quanto ela iria crescer. Como moramos em um apartamento pequeno, nossa principal preocupação era o conforto dela e nossos móveis (haha!). Ela sempre foi muito agitada e ansiosa e não conseguíamos controlar isso de jeito nenhum, tudo ela achava que estávamos brincando. </p>
+
+          <p>No adestramento aprendemos manejos ambientais para que a Brisa tivesse o melhor ambiente possível para nós vivermos, e tivemos um ganho enorme com o controle dela. Por ser muito agitada, não conseguíamos receber visitas ou sair com ela para lugares com muitas pessoas que ela ficava muito agitada. Agora conseguimos controlar mais a ansiedade dela com alguns comandos que aprendemos e com os treinos que fizemos. </p>
+
+          <p>Hoje sei que o cachorro é total reflexo da nossas atitudes e ensinamentos. Tudo é questão de paciência, dedicação e disciplina. Hoje sei que estamos no caminho certo com os aprendizados e somos gratos por todos os ensinamentos!      </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="depoimento-container" data-aluno="frederico">
+      <header class="depoimento-header">
+        <div class="foto-aluno">
+          <img alt="" />
+        </div>
+        <div class="nome-aluno-container">
+          <h5 class="nome">Anderson Lima</h5>
+          <p class="descricao-aluno">Tutor do Fredericco</p>
+        </div>
+        <div class="stars">
+        </div>
+      </header>
+      <div class="depoimento">
+        <blockquote>
+          <p>"Tive a grande sorte de uma amiga me indicar a Ludicão logo quando o Fredericco chegou na família. Meu grande medo era ele destruir os móveis, chinelos, coisas que a maioria dos filhotes fazem. </p>
+
+          <p>Com a ajuda da Ludicão, em especial a Thamires, desde o primeiro dia fomos preparados para o Fredericco. Sim, o adestramento é do tutor e não do cão. Nós temos que aprender e entender nosso filhote, como educá-lo e melhorar a qualidade de vida desse serzinho que traz tanta alegria. As dicas e ensinamentos foram fundamentais para ver o quanto o Fredericco está feliz em casa, não precisou destruir nenhum móvel, nenhum chinelo, nenhum brinquedo. </p>
+          
+          <p>Obrigado Ludicão, não tenho palavras para descrever o quanto sou grato. Hoje sei que eu faço meu filhote feliz e ele me faz feliz graças a vocês! Gratidão!"        </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="depoimento-container" data-aluno="toddy">
+      <header class="depoimento-header">
+        <div class="foto-aluno">
+          <img alt="" />
+        </div>
+        <div class="nome-aluno-container">
+          <h5 class="nome">Débhora e Daniel</h5>
+          <p class="descricao-aluno">Tutores do Toddy</p>
+        </div>
+        <div class="stars">
+        </div>
+      </header>
+      <div class="depoimento">
+        <blockquote>
+          <p>"Nessa quarentena o nosso novo membro da família - o Toddy, chegou em nosso lar e sem sombra de dúvidas com ele recebemos um amor imenso.</p>
+
+          <p>Gostaríamos de agradecer em especial à Thamires que com todo seu conhecimento e dedicação, nos auxiliou na educação desse bichinho no período mais complicado que é quando ele ainda é filhote (e sedutor safado que consegue tudo com aquele olhar de pedinte, rs).</p>
+
+          <p>Agradecemos pelas dicas, tutoriais, aulas práticas e tudo que foi possível dentro dessa pandemia e com certeza, quando tudo isso passar iremos dar um jeito de nos conhecermos pessoalmente.</p>
+
+          <p>Um grande abraço para a família Ludicão da família do Toddy!"        </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="depoimento-container" data-aluno="fred">
+      <header class="depoimento-header">
+        <div class="foto-aluno">
+          <img alt="" />
+        </div>
+        <div class="nome-aluno-container">
+          <h5 class="nome">Angela e Carol</h5>
+          <p class="descricao-aluno">Tutores do Fred</p>
+        </div>
+        <div class="stars">
+        </div>
+      </header>
+      <div class="depoimento">
+        <blockquote>
+          <p>"O Frederico veio pra casa com 45 dias e sempre foi um cachorro “normal". Desde que começou a poder passear ele adorava sair, mas sempre soube os caminhos que o levavam para o veterinário/banho e evitava esses caminhos, num determinado momento ele se recusava a passear. Ele começou a ficar medroso com tudo e ansioso com o toque do interfone e chegava a se esconder.</p>
+
+          <p>Quando começamos as aulas o Fred se escondia, mas logo se adaptou ao Leandro, e aos poucos, com treino e paciência o Fred começou a ter menos medo de passear e do toque do interfone, começou a explorar mais objetos que antes tinha medo e aceitar melhor pessoas desconhecidas em casa, ele até se arrisca a ir cheirar a pessoa dependendo da situação!</p>
+
+          <p>Somos muito gratos a essa ajuda, pois ele está cada dia agindo melhor e vencendo os seus medos, sem que isso seja traumático para ele." </p>       
+        </blockquote>
+      </div>
+    </div>
+    <div class="depoimento-container" data-aluno="bela">
+      <header class="depoimento-header">
+        <div class="foto-aluno">
+          <img alt="" />
+        </div>
+        <div class="nome-aluno-container">
+          <h5 class="nome">Julia Horta</h5>
+          <p class="descricao-aluno">Tutora da Bela</p>
+        </div>
+        <div class="stars">
+        </div>
+      </header>
+      <div class="depoimento">
+        <blockquote>
+          <p>"Contratamos esse serviço porque  nossas cachorrinhas anteriores eram ariscas com pessoas novas e faziam muita bagunça. Assim que a Bela chegou iniciamos o adestramento porque queríamos que ela também participasse como cão terapêutico em nossa clínica de psicologia.</p>
+
+          <p>Após cerca de 3 meses de adestramento ela já estava discriminando bem os ambientes de casa e consultório, se comportando de forma coerente com os espaços. Todos os pacientes adoram ela! Ela é bem carinhosa e em momentos de maior emoção dos pacientes ela se aproxima e os apóia também. Além disso, ela consegue descontrair os atendimentos infantis, de casais e de idosos.</p>
+
+          <p>O adestramento também foi muito importante para ela aprender a socializar com outros cães. Ela adora fazer amigos novos e agora parece saber respeitar o limite de cães que não são tão dóceis.</p>
+
+          <p>
+            Sou muito grata pelo cuidado do Leandro com a Bela e pela paciência dele comigo e com minha família que as vezes dificultamos seu trabalho fazendo o que ele falou para não
+            fazer, rs."
+          </p>        
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="comprar" id="comprar">
+    <h2 class="title-comprar">Consulta Comportamental Online</h2>
+    <ul class="lista-comprar">
+      <li>Consulta online de 1h30</li>
+      <li>Orientações teóricas e práticas</li>
+      <li>Encontro único com direito à retorno* </li>
+      <li>Suporte durante 30 dias</li>
+      <li>Material de apoio</li>
+      <li>Valor independente do número de cães</li>
+    </ul>
+    <p class="oservacao-comprar">
+      *Retorno apenas se agendado em até 30 dias após a realização da consulta. No valor de R$80,00.
+    </p>
+    <p class="promocao">de <span class="preco-antigo">R$ 240</span> por até 5x <span class="preco-destaque">R$ 31</span><br />
+      à vista por <span class="preco-destaque">R$ 140</span>
+    </p>
+    <div class="timer-wrapper">
+      <h2 class="timer-title">PROMOÇÃO ACABA EM <span data-days>4</span> DIAS E</h2>
+      <div class="timer">
+        <div class="horas">
+          <span class="time" data-hours>05</span>
+          <p class="time-desc">HORA(S)</p>
+        </div>
+        <div class="minutos">
+          <span class="time" data-minutes>05</span>
+          <p class="time-desc">MINUTO(S)</p>
+        </div>
+        <div class="horas">
+          <span class="time" data-seconds>05</span>
+          <p class="time-desc">SEGUNDO(S)</p>
+        </div>
+      </div>
+      <p class="text">Unidades Limitadas</p>
+    </div>
+    <button class="btn-comprar"><span class="btn-reservar">Comprar Agora</span> <div class="pagbank"></div></button>
+    <p class="pix">Aceitamos pagamento por pix através da chave: </p>
+    <div class="pix-container">
+      <span class="chave-pix" id="pix">13981863007</span>
+      <span class="btn-copy" data-clipboard-target="#pix">copiar</span>
+    </div>
+   
+    <p class="comprovante">Envie o comprovante para o whatsapp:</p>
+    <div class="pix-container">  
+      <span class="whatsapp">(13) 9 8186 3007</span>
+      <a href="https://wa.me/5513981863007" target="_blank" class="btn-whats">abrir</a>
+    </div>
+
+    <div class="modal-wrapper">
+      <div class="popup">
+        <p>Por favor, preencha os dados para continuar</p>
+        <span class="popup-close">x</span>
+        <form  class="popup-content" action="https://formsubmit.co/ludicaobemestar@gmail.com" method="POST">
+          <label for="Nome">
+            <span class="label">Nome:</span>
+            <input type="text" name="Nome" id="nome" required>
+            <span class="error-nome"></span>
+          </label>
+          <label for="Email">
+            <span class="label">Email:</span>
+            <input type="email" name="Email" id="email" required>
+            <span class="error-email"></span>
+          </label>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Possível nova venda!">
+          <input type="hidden" name="_next" value="https://pag.ae/7YSjFeVG5">
+          <button class="btn-submit" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="quemsomos">
+    <div class="title-container">
+      <h4 class="subtitle">Mas afinal,</h4>
+      <h1 class="title">quem somos?</h1>
+    </div>
+    <div class="texto">
+      <p>Atuamos há 10 anos com adestramento. Sempre buscando a excelência nos atendimentos e visando o bem-estar tanto dos cães quanto das famílias.</p>
+      <p>Estamos sempre nos atualizando e participando de cursos, congressos e discussões para oferecer o melhor aos nossos alunos.</p>
+      <p>Buscamos realizar um atendimento humanizado, ético e que dê autonomia para que os tutores possam entender melhor o universo canino. Assim proporcionando um relacionamento  justo e harmonioso. </p>
+      <p>A abordagem é baseada em metodologia moderna (ética e cientificamente embasada), focada em reforço positivo.</p>
+    </div>
+    <div class="img-nos"><img data-img-nos alt="Leandro, Thamires, Francisca e Mafalda em uma praça" /></div>
+    <div class="texto">
+      <p>Thamires e Leandro são comportamentalistas caninos desde 2012. Ambos auxiliares veterinários (apenas ela foi atuante na área por três anos, trabalhando em clínicas e hospitais veterinários).
+      </p><p>
+        Professores na grade de Comportamento Canino para os alunos do curso de Auxiliar Veterinário do CETACVET (Centro de Ensino e Treinamento em Anatomia e Cirurgia Veterinária).
+      </p><p>
+        Professores responsáveis pela capacitação de voluntários do Instituto Cão Terapeuta (ICT) e também pela avaliação dos novos cães de intervenção. 
+      </p><p>
+        Ministram curso de comunicação e linguagem canina para auxiliares veterinários, monitores de creche e day care, além das aulas e consultoria para tutores de cães.
+      </p><p>
+        Foram palestrantes no PetExperience de 2019 à convite da PetGames.
+        Ainda em 2019, foram convidados pelo ICT para dar um curso sobre comunicação canina para policiais da Guarda Civil de Cotia.
+      </p><p>
+        Em 2021 e 2022, à convite da Médica-veterinária comportamentalista Dra. Rute Albuquerque, foram palestrantes do COMVECA (Congresso Online de Medicina Veterinária Comportamental e Adestramento de Pets).
+      </p><p>
+        Em 2022, palestrantes da grade do 1º Congresso Nacional de Adestramento Positivo.
+        Possuem artigos nos blogs do CETACVET e Buono Pet.
+      </p><p>
+        No ano de 2022 realizaram um curso de capacitação sobre necessidades básicas e bem-estar canino para os funcionários do Departamento de proteção e bem-estar de animais domésticos da Prefeitura de Itanhaém/SP.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h4 class="title">fale conosco</h4>
+    <div class="whatsapp">
+      <p>Whatsapp</p>
+      <p>(13) 9 8186 3007</p>
+    </div>
+    <div class="email">
+      <p>Email</p>
+      <p>ludicaobemestar@gmail.com</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+$bone: url('./../assets/bone.webp');
+
+.paraquem{
+  @include sectionGutter(rgb(252, 252, 252));
+
+  .title-container{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+
+    .subtitle{
+      @include subtitle($cor-primaria-dark);
+    }
+
+    .title{
+      @include title($cinza-6);
+    }
+  }
+
+  .container{
+    background: $cinza-1;
+    border: 1px solid $cor-primaria-2;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+
+    .title{
+      color: $cor-primaria-dark;
+      font-size: 1.1rem;
+      position: relative;
+      padding: 0 4px;
+
+      &::before{
+        content:'';
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-image: $bone;
+        background-size: cover;
+        top:-4px;
+        left:-4px;
+      }
+    }
+
+    .flags-container{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 12px;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      
+
+      span{
+        padding: 8px;
+        font-size: .9rem;
+        background: #9C77B8;
+        border-radius: 5px;
+        color: #E8E8E8;
+      }
+    }
+  }
+
+  .out-title{
+    margin-top: 20px;
+    color: $cor-primaria-dark;
+    font-size: 1.1rem;
+
+    .sub{
+      text-decoration: underline;
+    }
+
+  }
+}

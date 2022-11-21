@@ -1,0 +1,108 @@
+@mixin timer-wrapper{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  
+  &::before{
+    content:'';
+    width: 40px;
+    height: 2px;
+    background-color: $cinza-4;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+
+  .timer-title{
+    font-size: 1.3rem;
+    color: $cinza-2;
+    font-weight: 400;
+  }
+
+  .timer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+    width: 100%;
+
+    div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: $cor-primaria-2;
+      background-color: $cinza-6;
+      border-radius: 5px;
+      padding-top: 12px;
+      padding-bottom: 8px;
+
+      .time{
+        font-size: 2.9rem;
+      }
+
+      .time-desc{
+        font-size: .8rem;
+      }
+    }
+  }
+
+  .text{
+    margin: 12px auto;
+    color: $cinza-3;
+  }
+}
+
+@mixin promocao($cor1, $cor2){
+  font-size: 1.3rem;
+  color: $cor1;
+
+  .preco-antigo{
+    color: #BD2626;
+    text-decoration: line-through;
+  }
+
+  .preco-destaque{
+    color: $cor2;
+    font-weight: 500
+  }
+}
+
+.black-friday{
+  @include sectionGutter($cinza-7);
+  
+  .title{
+    font-size: 1.8rem;
+    color: $cinza-1;
+    font-weight: 400;
+  }
+
+  .subtitle{
+    font-size: 1.6rem;
+    color: $cor-primaria;
+    font-weight: 400;
+  }
+
+  .promocao{
+    @include promocao($cinza-3, $cinza-1);
+  }
+
+  
+
+  
+
+  .timer-wrapper{
+    @include timer-wrapper;
+  }
+
+  .loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .btn-reservar{
+    @include btn;
+  }
+}
