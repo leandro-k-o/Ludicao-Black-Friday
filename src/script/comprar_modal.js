@@ -1,4 +1,5 @@
 import DOMPurify from "dompurify";
+import {blackFridayIsInactive} from './countdown';
 
 const modalWrapper = document.querySelector('.modal-wrapper');
 const btnComprar = document.querySelector('.btn-comprar');
@@ -7,9 +8,19 @@ const [form] = document.forms;
 const classesCloseModal = ['modal-wrapper', 'popup-close'];
 const sanitize = (value) => DOMPurify.sanitize(value);
 
+// countdown.js -- blackFridayIsInactive()
+const desativarCompra = () => {
+  const divPix = document.querySelector('.comprar-pix-container');
+  divPix.style.display = 'none';
+  btnComprar.disabled = true;
+  btnComprar.childNodes[0].textContent = 'Esgotado';
+}
 
-const openModal = () => modalWrapper.style.display = 'flex';
-btnComprar.addEventListener('click',openModal)
+if(blackFridayIsInactive()) desativarCompra();
+else{
+  const openModal = () => modalWrapper.style.display = 'flex';
+  btnComprar.addEventListener('click',openModal)
+}
 
 const closeModal = ({classList}) => {
   const closePopup = classesCloseModal.some((r)=> r === classList[0])  
@@ -27,7 +38,6 @@ const campoValido = (target, empty = false) => {
   if(!valido || empty){
     target.classList.add('error');
     target.nextElementSibling.innerText = empty ? '*Preencha corretamente' :`*${message}`;
-    // btnSubmit.disabled = true;
   }
 }
 
