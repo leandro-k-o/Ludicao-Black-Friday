@@ -64,6 +64,7 @@ $logoPagBank: url('../assets/logopagbank.webp');
 
   .timer-wrapper{
     @include timer-wrapper;
+    display: flex;
 
     .timer-title{
       color: $cinza-4;
@@ -111,8 +112,19 @@ $logoPagBank: url('../assets/logopagbank.webp');
     background: linear-gradient(180deg, #ddd9df 0%, #f6f4f8 100%);
     cursor: pointer;
 
+    &:disabled{
+      cursor: default;
+    }
+
     .btn-reservar{
       border-radius: 10px 0 0 10px;
+    }
+
+    &:disabled .btn-reservar{
+      background: none;
+      background-color: $cinza-3;
+      cursor: default;
+
     }
 
     .pagbank{
